@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <meta http-equiv="Content-Type" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body>
+<div class="c_body">
+<div class="header">
+    <a href="index.html">
+        <div class="l">
+            <div class="logo">
+                <img src="img/logo.png"/>
+            </div>
+        </div>
+    </a>
+
+    <div class="ri">
+        <div><a id="active" href="development.html">СОЗДАНИЕ САЙТОВ</a></div>
+        <div><a href="readySolutions.html">ГОТОВЫЕ РЕШЕНИЯ</a></div>
+        <div><a href="#">НАШ БЛОГ</a></div>
+        <div><a href="contacts.html">НАШИ КОНТАКТЫ</a></div>
+
+    </div>
+</div>
+<div align="center" class="content">
+    <h2>
+        СОЗДАНИЕ САЙТОВ МФО
+    </h2>
+    <h5>
+        Зная о специфике микрофинансового бизнеса в интернете всё,<br>
+        мы оказываем уникальные услуги по разработке сайтов МФО,<br>
+        наполняя их всем необходимым функционалом.
+    </h5>
+
+    <div>
+        <img src="img/notebook.png">
+    </div>
+    <div class="textNote">
+        <div class="title">
+            НАШИ САЙТЫ
+        </div>
+        <div>
+            Увеличивают портфель
+            заемщиков благодаря
+            точной настройке
+        </div>
+        <div>
+            Выполняют требование ФЗ № 151
+            “О микрофинансовой деятельности
+            и микрофинансовых организаций”
+            ст 9.2.2
+        </div>
+        <div>
+            Помогают оказывать услуги клиентам
+            24/7 без перерыва на обед и
+            дополнительных затрат на персонал
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <h3>
+        ОСОБЕННОСТИ И ФУНКЦИОНАЛ
+    </h3>
+    <script>
+
+        $("document").ready(function () {
+            $(".one").removeClass("active");
+            $(".one").addClass("active");
+            $(".one").click(function () {
+                $("#one").css({"display": "block"});
+                $("#two").css({"display": "none"});
+                $("#three").css({"display": "none"});
+                $("#four").css({"display": "none"});
+                $("#five").css({"display": "none"});
+            });
+            $(".two").click(function () {
+                $("#two").css({"display": "block"});
+                $("#one").css({"display": "none"});
+                $("#three").css({"display": "none"});
+                $("#four").css({"display": "none"});
+                $("#five").css({"display": "none"});
+            });
+            $(".three").click(function () {
+                $("#three").css({"display": "block"});
+                $("#one").css({"display": "none"});
+                $("#two").css({"display": "none"});
+                $("#four").css({"display": "none"});
+                $("#five").css({"display": "none"});
+            });
+            $(".four").click(function () {
+                $("#four").css({"display": "block"});
+                $("#one").css({"display": "none"});
+                $("#two").css({"display": "none"});
+                $("#three").css({"display": "none"})
+                $("#five").css({"display": "none"});
+            });
+
+
+            $(".five").click(function () {
+                $("#five").css({"display": "block"});
+                $("#one").css({"display": "none"});
+                $("#two").css({"display": "none"});
+                $("#three").css({"display": "none"})
+                $("#four").css({"display": "none"});
+            });
+            $(".r div").click(function () {
+                $(".r div").removeClass("active");
+                $(this).addClass("active");
+            });
+
+
+        });
+
+    </script>
+    <!---->
+    <div class="features">
+        <div class="l">
+            <div id="leftImg">
+                <div id="one">
+                    <img src="img/browser.png"><br>
+                            <span>
+                                Основываясь на собранной статистике поведения посетителей сайтов МФО,
+                                мы разрабатываем уникальные по юзабилити интерфейсы сайтов.
+                            </span>
+                </div>
+                <div id="two">
+                    <img src="img/browser.png"><br>
+                            <span>
+                                Зная о требованиях к сайтам Микрофинансовых организаций, мы
+                                наполняем их всей необходимой информацией и разделами.
+                            </span>
+                </div>
+                <div id="three">
+                    <img src="img/browser2.png"><br>
+                            <span>
+                                Разрабатываем удобные калькуляторы займов с возможностью
+                                оформления онлайн заявки на займ
+                            </span>
+                </div>
+                <div id="four">
+                    <img src="img/browser3.png"><br>
+                            <span>
+                                В стоимость работ входит подготовка к продвижению Вашего сайта,
+                                установка счетчиков посещаемости и многое другое
+                            </span>
+                </div>
+                <div id="five">
+                    <img src="img/browser4.png"><br>
+                            <span>
+                                Вакансии Вашей компании, новости, отзывы клиентов и другие
+                                дополнительные возможности
+                            </span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="r">
+            <div class="one">Юзабилити сайтов</div>
+            <div class="two">Соответствие всем требованиям</div>
+            <div class="three">Модуль онлайн заявки</div>
+            <div class="four">Подготовка к продвижению</div>
+            <div class="five">Дополнительные возможности</div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    <h3>
+        СТОИМОСТЬ РАЗРАБОТКИ САЙТА
+    </h3>
+    <h5>
+        Стоимость разработки сайта МФО зависит от функционла и дизайна,<br>
+        которые Вы хотите видеть на сайте.
+    </h5>
+    <h4>
+        ЗАПОЛНИТЕ ФОРМУ
+    </h4>
+
+    <div align="center" class="form">
+
+        <form>
+            <div style="vertical-align:top;margin-bottom:10px;margin-left:10px;padding:10px 0px 3px 0px;;width:760px;display:block;border-bottom:1px silver solid;text-align:left;font-size: 18px;font-family: 'Arial'">
+                <img src="img/mail.png"> Мы сформируем Вам отчет и вышлем на почтовый ящик
+            </div>
+            <div>
+                <p>Ваше имя:</p>
+                <input>
+            </div>
+
+            <div>
+                <p>Почтовый индекс:</p>
+                <input>
+            </div>
+
+            <div>
+                <p>Номер телефона:</p>
+                <input>
+            </div>
+
+            <div>
+                <p>Название организации(бренда):</p>
+                <input>
+            </div>
+
+            <div>
+                <p>Город:</p>
+                <input>
+            </div>
+            <br>
+
+            <div>
+                <p>Информация:</p>
+                <textarea></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+
+        </form>
+
+    </div>
+    <div class="shadow"></div>
+</div>
+<div align="center" class="footer">
+    <div>
+        2013 “Гуру МФО”
+    </div>
+    <div>
+        г. Саратов, Орджоникидзе 2в
+    </div>
+    <div>
+        +7 (8452) 60-30-63
+    </div>
+    <div>
+        mail@sitemfo.ru
+    </div>
+</div>
+</div>
+</body>
+</html>
