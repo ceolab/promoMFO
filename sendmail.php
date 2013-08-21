@@ -7,8 +7,4 @@
  * To change this template use File | Settings | File Templates.
  */
 
-$text = "
- Имя: %name%<br/>
- Email: %email%
-
-";
+?>
