@@ -734,3 +734,26 @@ blog.html
     left: 9px;
     display: none;
 }
+
+.content .errorField
+{
+    border: 1px solid red !important;
+}
+
+.message
+{
+    font-size: 12px;
+    padding: 3px;
+    background-color: silver;
+    display: none;
+}
+
+.successMessage
+{
+    color: blue;
+}
+
+.errorMessage
+{
+    color: red;
+}

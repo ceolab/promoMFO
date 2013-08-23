@@ -5,9 +5,15 @@
     <meta http-equiv="Content-Type" charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <script type="text/javascript" src="script.js"></script>
     <title></title>
 </head>
 <body>
+<div style="position: absolute; width: 100%;">
+    <div id="systemMessage" class="message" align="center">
+
+    </div>
+</div>
 <div class="c_body">
 <div class="header">
     <a href="index.html">
@@ -172,41 +178,41 @@
 
     <div align="center" class="form">
 
-        <form>
+        <form id="sendmail" method="post" action="/sendmail.php">
             <div style="vertical-align:top;margin-bottom:10px;margin-left:10px;padding:10px 0px 3px 0px;;width:760px;display:block;border-bottom:1px silver solid;text-align:left;font-size: 18px;font-family: 'Arial'">
-                <img src="img/mail.png"> Мы сформируем Вам отчет и вышлем на почтовый ящик
+                <img src="img/mail.png"> <span id="sendmailMessage">Мы сформируем Вам отчет и вышлем на почтовый ящик</span>
             </div>
             <div>
                 <p>Ваше имя:</p>
-                <input>
+                <input type="text" name="name" validator="notEmpty"/>
             </div>
 
             <div>
                 <p>Электронная почта:</p>
-                <input>
+                <input type="text" name="email" validator="email">
             </div>
 
             <div>
                 <p>Номер телефона:</p>
-                <input type="text"/>
+                <input type="text" type="text" name="phone" validator="phoneNumber"/>
             </div>
 
             <div>
                 <p>Название организации(бренда):</p>
-                <input>
+                <input type="text" name="orgname" validator="notEmpty">
             </div>
 
             <div>
                 <p>Город:</p>
-                <input>
+                <input type="text" name="city" validator="notEmpty">
             </div>
             <br>
 
             <div>
                 <p>Информация:</p>
-                <textarea></textarea>
+                <textarea name="text" validator="notEmpty"></textarea>
             </div>
-            <button type="submit">Отправить</button>
+            <button type="button" onclick="submitForm()">Отправить</button>
 
         </form>
 

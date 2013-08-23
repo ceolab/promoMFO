@@ -6,5 +6,19 @@
  * Time: 12:04 AM
  * To change this template use File | Settings | File Templates.
  */
-   qweqwe
+
+$template = file_get_contents("mailTemplates/mail.php");
+
+foreach($_POST as $key => $val)
+{
+    $template = str_replace("%".$key."%", $val, $template);
+}
+
+if(mail("mail@sitemfo.ru", "Заявка на разработку", $template))
+    setcookie("sendmail", "ok");
+else
+    setcookie("sendmail", "fail");
+
+header("location: /development.html");
+
 ?>
