@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <meta http-equiv="Content-Type" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <title>ГУРУ МФО - Контакты</title>
+</head>
+<body>
+<div class="c_body">
+    <div class="header">
+        <a href="index.html">
+            <div class="l">
+                <div class="logo">
+                    <img src="img/logo.png"/>
+                </div>
+            </div>
+        </a>
+
+        <div class="ri">
+            <div><a href="development.html">СОЗДАНИЕ САЙТОВ</a></div>
+            <div><a href="readySolutions.html">ГОТОВЫЕ РЕШЕНИЯ</a></div>
+            <div><a id="active" href="blog.html">НАШ БЛОГ</a></div>
+            <div><a href="contacts.html">НАШИ КОНТАКТЫ</a></div>
+
+        </div>
+    </div>
+    <div align="center" class="content">
+        <h2>
+            НАШ БЛОГ
+        </h2>
+        <h5>
+            Совсем скоро мы запустим собственный блог, в котором с удовольствием<br>
+            будем рассказывать о наших наблюдениях, статистике и опыте<br>
+            в маркетинге Микрофинансовых организаций.
+        </h5>
+        <h4>
+            <span id="light">
+                ХОТИТЕ УЗНАТЬ ОБ ОТКРЫТИИ БЛОГА ПЕРВЫМИ?
+            </span>
+        </h4>
+        <div id="subscribe">
+            <span>
+                <img src="img/mail.png">
+                Подпишитесь на рассылку
+            </span>
+            <input id="email" required="required" type="text" placeholder="Введите адрес электронной почты" />
+            <div id="error"></div>
+            <button>Подписаться</button>
+        </div>
+        <script>
+            $(document).ready(function(){
+                var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
+                var mail = $("#email");
+
+                mail.blur(function(){
+                    if(mail.val() != ''){
+                        if(mail.val().search(pattern) == 0){
+                            $("#error").css({"display" : "none"})
+                        } else{
+                            $("#error").css({"display" : "block"})
+                        }
+                    }else{
+                        $("#error").css({"display" : "none"})                    }
+                })
+            });
+        </script>
+        <div class="shadow"></div>
+    </div>
+    <div align="center" class="footer">
+        <div>
+            2013 “Гуру МФО”
+        </div>
+        <div>
+            г. Саратов, Орджоникидзе 2в
+        </div>
+        <div>
+            +7 (8452) 60-30-63
+        </div>
+        <div>
+            mail@sitemfo.ru
+        </div>
+    </div>
+</div>
+</body>
+<!-- Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter22113157 = new Ya.Metrika({id: 22113157,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true});
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="//mc.yandex.ru/watch/22113157" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</html>

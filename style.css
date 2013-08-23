@@ -671,3 +671,66 @@ contacts.html
     font-size: 28px;
     margin-right: 140px;
 }
+/*
+blog.html
+*/
+.content #light{
+    color: #999999;
+}
+.content #subscribe{
+    width: 298px;
+    height: 136px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 6px 0px rgb(117, 117, 117);
+    background-color: #f2f2f2;
+    position: relative;
+    margin-bottom: 50px;
+}
+.content #subscribe span{
+    vertical-align:top;
+    margin-bottom:10px;
+    padding:10px 0px 3px 0px;
+    width:281px;
+    display:block;
+    border-bottom:1px silver solid;
+    text-align:left;
+    font-size: 18px;
+    font-family: "Arial";
+}
+.content #subscribe input{
+    width: 266px;
+    height: 31px;
+    font-family: "Arial";
+    font-size: 13px;
+    color: #4d4d4d;
+    font-style: italic;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 14px;
+    background: url("img/shapeInput.png") no-repeat;
+}
+.content #subscribe button{
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 13px;
+    background: url("img/button.png") repeat-x;
+    border: 0px;
+    border-radius: 5px;
+    width: 115px;
+    height: 33px;
+    position: absolute;
+    display: block;
+    right: 9px;
+    bottom: 9px;
+}
+.content #subscribe #error{
+    background: url("img/error.png") no-repeat;
+    width: 150px;
+    height: 32px;
+    position: absolute;
+    bottom: 16px;
+    left: 9px;
+    display: none;
+}
