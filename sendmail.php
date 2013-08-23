@@ -13,8 +13,8 @@ foreach($_POST as $key => $val)
 {
     $template = str_replace("%".$key."%", $val, $template);
 }
-
-if(mail("mail@sitemfo.ru", "Заявка на разработку", $template))
+$headers = sprintf("Content-type:text/html; charset = utf-8 \r\nFrom:no-reply@sitemfo.ru");
+if(mail("mail@sitemfo.ru", "Заявка на разработку", $template, $headers))
     setcookie("sendmail", "ok");
 else
     setcookie("sendmail", "fail");
