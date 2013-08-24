@@ -150,6 +150,18 @@ index.html
     margin-top: 60px;
     margin-bottom: 60px
 }
+.content .icon .soon{
+    position: relative;
+}
+.content .icon .soon #soon{
+    position: absolute;
+    top: 29px;
+    left: 95px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
 
 .content .icon img {
     display: block;
