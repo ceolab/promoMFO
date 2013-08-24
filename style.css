@@ -152,6 +152,7 @@ index.html
 }
 .content .icon .soon{
     position: relative;
+    color: #999999;
 }
 .content .icon .soon #soon{
     position: absolute;
